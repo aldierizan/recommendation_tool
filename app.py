@@ -9,7 +9,7 @@ movie_df=pickle.load(open("movie_recm.pkl","rb"))
 similarity=pickle.load(open("similarity.pkl","rb"))
 list_movie=np.array(movie_df["film_title"])
 option = st.selectbox(
-"Select Movie ",
+"Select Your Favorite Movie ",
 (list_movie))
 
 # def show_url(movie):
