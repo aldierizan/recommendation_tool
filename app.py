@@ -29,10 +29,10 @@ def movie_recommend(movie):
           # return("{} {}".format(movie_df.iloc[i[0]].title, movie_df.iloc[i[0]].urls))
      return(l)
 if st.button('Recommend Me'):
-     st.write('Movies Recomended for you are:')
+     st.write('5 Recommended Movies for You:')
      # st.write(movie_recommend(option),show_url(option))
      df = pd.DataFrame({
-          'Movie Recommended': movie_recommend(option),
+          'Movie Recomendation': movie_recommend(option),
         #   'Movie Url': show_url(option)
      })
 
